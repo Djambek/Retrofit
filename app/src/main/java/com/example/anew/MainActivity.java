@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity{
 
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl("https://api.rasp.yandex.net/")
+                .addConverterFactory(GsonConverterFactory.create())
                 .build();
 
 
